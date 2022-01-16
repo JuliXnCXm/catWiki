@@ -1,0 +1,32 @@
+.catImagesContainer {
+    display: flex;
+    flex-direction: column;
+    column-count: 4;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.catImagesContainer div {
+    margin-bottom: 130px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 94%;
+}
+
+.catImagesContainer--title {
+    margin-bottom: 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.catImagesContainer--image {
+
+    width: 80%;
+    height: 80%;
+    object-fit: fill;
+    border-radius: 24px;
+    margin-bottom: 50px;
+}

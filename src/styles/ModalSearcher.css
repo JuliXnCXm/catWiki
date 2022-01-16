@@ -1,0 +1,141 @@
+.heroContainer--form__input {
+    padding-top: 0;
+}
+
+.heroContainer--form__input input {
+    height: 50px;
+    border-radius: 60px;
+    width: 100%;
+    border: 1px solid black;
+    text-indent: 10px;
+}
+
+.heroContainer--form > div {
+    width: 90%;
+}
+
+.heroContainer--form__icon {
+    font-size: 30px;
+    position: absolute;
+    color: black;
+    padding-top: 10px;
+    left: 70%;
+}
+
+.heroContainer--form__input input:focus+.dropdown-content {
+    display: block;
+    z-index: 1;
+}
+
+.dropdown-content {
+    max-height: 280px;
+    width: 90%;
+    position: absolute;
+    background-color: #fff;
+    overflow-y: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    margin-top: 10px;
+    border-radius: 24px;
+    color: black;
+}
+
+.dropdown-content::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.catname {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    height: 56.16px;
+    text-decoration: none;
+    line-height: 22px;
+    padding: 15px;
+    color: black;
+}
+
+.close-icon {
+    visibility: hidden;
+}
+
+.catname:hover {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .heroContainer--form__input input {
+        border: 1px solid black;
+        background-color: white;
+        width: 70%;
+        height: 35px;
+        text-align: left;
+    }
+
+    .heroContainer--form {
+        width: 40%;
+    }
+    .heroContainer--form > div {
+        width: 100%;
+    }
+
+    .heroContainer--form__icon {
+        font-size: 20px;
+        position: absolute;
+        left: 60%;
+        padding-top: 10px;
+    }
+
+    .dropdown-content {
+        max-height: 280px;
+        position: relative;
+        width: 75%;
+        z-index: -1;
+        margin: 0;
+        box-shadow: none;
+    }
+
+    .dropdown-content::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+    }
+
+    .inputSearcher {
+        padding: 80px 40px 40px 40px;
+    }
+
+    .inputSearcher > div {
+        width: 100%;
+    }
+
+    .inputSearcher input {
+        width: 100%;
+    }
+    .close-icon {
+        background-color: rgba(151, 151, 151, 0.1);
+        border-radius: 5px;
+        font-size: 30px;
+        font-weight: normal;
+        position: absolute;
+        visibility: visible;
+        right: 1px;
+        cursor: pointer;
+        margin: 15px 15px 35px 5px;
+        right: 0;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .inputSearcher {
+        left: 70%;
+    }
+}

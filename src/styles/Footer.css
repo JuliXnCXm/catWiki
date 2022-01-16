@@ -1,0 +1,39 @@
+footer {
+    background-color: #000;
+    display: flex;
+    border-top-left-radius: 42px;
+    border-top-right-radius: 42px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 90%;
+    height: 100px;
+    margin-top: 20px;
+    padding-left: 180px;
+    padding-right: 45px;
+
+}
+
+.footer--image {
+    filter: invert(98%) sepia(55%) saturate(68%) hue-rotate(115deg) brightness(117%) contrast(100%);
+    width: 11%;
+}
+
+@media screen and (max-width: 800px) {
+
+    footer {
+        display: block;
+        padding-left: 24px;
+        padding-right: 0;
+        padding-top: 13px;
+    }
+    footer p {
+        font-size: 11px;
+        padding-right: 15px;
+    }
+
+    .footer--image {
+        width: 30%;
+        padding-bottom: 15px;
+    }
+}
